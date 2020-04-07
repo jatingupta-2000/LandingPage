@@ -37,7 +37,7 @@ header span {
 
 .welcome-title {
   font-size: 55px;
-  font-style: SemiBold;
+  font-weight: 400;
 }
 
 .landing-text {
@@ -54,6 +54,7 @@ header span {
 
 .sign-in-buttons {
   padding-top: 30px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -124,3 +125,11 @@ footer {
 footer span {
   font-weight: bold;
 }
+
+footer a {
+  font-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+/* Adding media querries */
