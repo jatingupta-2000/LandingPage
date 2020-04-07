@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  overflow-x: visible;
+}
+
+/* header */
+
+header h5 {
+  margin-top: 2vh;
+  margin-left: 3vw;
+
+  font-size: 30px;
+}
+
+header span {
+  color: #3498db;
+}
+
+/* main content */
+
+.row {
+  display: flex;
+}
+
+.row div {
+  width: 50%;
+}
+
+.landing-container {
+  padding-top: 15vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+
+.welcome-title {
+  font-size: 55px;
+  font-style: SemiBold;
+}
+
+.landing-text {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.landing-text span {
+  color: #196598;
+
+  font-weight: normal;
+}
+
+.sign-in-buttons {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-buttons button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  border-radius: 5px;
+  border: none;
+  max-width: 220px;
+  min-height: 50px;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 3px rgb(90, 90, 90);
+}
+
+.sign-in-buttons button:hover {
+  cursor: pointer;
+}
+
+.email-button:hover {
+  background-color: #ce0707;
+}
+.google-button:hover {
+  background-color: #ebebeb;
+}
+.github-button:hover {
+  background-color: #3f3f3f;
+}
+
+.sign-in-buttons button img {
+  width: 10%;
+}
+
+.sign-in-buttons button p {
+  font-size: small;
+}
+
+.email-button {
+  background-color: #eb0606;
+  color: white;
+}
+
+.github-button {
+  background-color: black;
+  color: white;
+}
+
+.right-col {
+  max-width: 100%;
+}
+
+.right-col img {
+  margin-top: -10vh;
+  width: 100%;
+}
+
+footer {
+  font-size: small;
+  font-weight: lighter;
+  padding: 60px 10px 0 10px;
+
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+footer span {
+  font-weight: bold;
+}
