@@ -164,11 +164,8 @@ footer a {
     width: 100%;
   }
 
-  .right-col {
-    display: block;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+  .right-col img {
+    width: 100%;
   }
 
   .landing-text {
