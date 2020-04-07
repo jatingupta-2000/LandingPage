@@ -36,7 +36,7 @@ header span {
 }
 
 .welcome-title {
-  font-size: 55px;
+  font-size: 45px;
   font-style: SemiBold;
 }
 
@@ -107,14 +107,14 @@ header span {
 }
 
 .right-col img {
-  margin-top: -10vh;
-  width: 100%;
+  margin-top: 0vh;
+  width: 80%;
 }
 
 footer {
   font-size: small;
   font-weight: lighter;
-  padding: 60px 10px 0 10px;
+  padding: 60px 20px 0 20px;
 
   display: flex;
   vertical-align: middle;
