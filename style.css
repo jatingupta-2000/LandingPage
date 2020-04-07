@@ -41,13 +41,13 @@ header span {
 
 .welcome-title {
   font-size: 45px;
-  font-style: SemiBold;
+  font-weight: 500;
 }
 
 .landing-text {
   padding-top: 10px;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .landing-text span {
