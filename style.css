@@ -30,7 +30,8 @@ header span {
   display: flex;
 }
 
-.row div {
+.right-col,
+.left-col {
   width: 50%;
 }
 
@@ -80,6 +81,10 @@ header span {
   cursor: pointer;
 }
 
+.sign-in-buttons button:focus {
+  outline: none;
+}
+
 .email-button:hover {
   background-color: #ce0707;
 }
@@ -115,6 +120,90 @@ header span {
 .right-col img {
   margin-top: 0vh;
   width: 80%;
+}
+
+/* email input */
+
+.email-section {
+  display: none;
+  margin-top: 40px;
+  max-width: 40%;
+  padding: 10px 20px 20px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0.5px 0.5px 6px #e6e6e6;
+}
+
+.email-section h3 {
+  width: 100%;
+  color: #125581;
+  font-size: 30px;
+  font-weight: 350;
+}
+
+.email-input,
+.password-input {
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: medium;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+  border-bottom: 0.5px solid #c2c2c2;
+}
+
+.password-input {
+  display: none;
+}
+
+.email-input:focus,
+.password-input:focus {
+  outline: none;
+  border-bottom: 0.5px solid #3498db;
+}
+
+.email-buttons {
+  margin-top: 30px;
+
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-buttons button {
+  width: fit-content;
+  padding: 0 20px 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: none;
+  cursor: pointer;
+  border: none;
+  height: 35px;
+}
+
+.email-next {
+  color: white;
+  background-color: #3498db;
+}
+
+.email-submit {
+  display: none;
+  color: white;
+  background-color: #3498db;
+}
+
+.email-next:hover,
+.email-submit:hover {
+  background-color: #1a6ea7;
+}
+
+.email-cancel:hover {
+  background-color: #ebebeb;
+}
+
+.email-buttons button:focus {
+  outline: none;
 }
 
 footer {
@@ -191,6 +280,14 @@ footer a {
 
   .sign-in-buttons button {
     width: 80%;
+  }
+
+  .email-section {
+    max-width: 100%;
+  }
+
+  .email-section h3 {
+    text-align: center;
   }
 
   footer {
