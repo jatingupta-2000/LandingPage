@@ -18,6 +18,7 @@
   </head>
   <body>
     <header>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <h5 class="title">OPEN<span>&ltSOURCE&gt</span>CODE</h5>
       <img src="SVG/Path 29.svg" />
     </header>
@@ -47,10 +48,27 @@
           <div class="email-section">
             <h3>Sign in with email.</h3>
             <form class="email">
-              <input type="email" class="email-input" placeholder="Email" />
+              <input
+                type="email"
+                class="email-input sign-in-input"
+                placeholder="Email"
+              />
+              <div class="name">
+                <input
+                  type="text"
+                  class="name-fname sign-in-input"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="name-lname sign-in-input"
+                  placeholder="Last Name"
+                />
+              </div>
+
               <input
                 type="password"
-                class="password-input"
+                class="password-input sign-in-input"
                 placeholder="Password"
               />
               <div class="email-buttons">
@@ -75,5 +93,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="landingPage.js"></script>
   </body>
 </html>
