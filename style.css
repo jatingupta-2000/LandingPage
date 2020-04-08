@@ -119,6 +119,8 @@ header span {
 
 .right-col img {
   margin-top: 0vh;
+  padding-right: 30px;
+  float: right;
   width: 80%;
 }
 
