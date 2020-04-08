@@ -32,12 +32,14 @@ $(document).ready(function () {
     $(".email-cancel").click(function (e) {
         e.preventDefault();
         $(".email-section").hide("fast");
-        $(".sign-in-buttons").show("fast");
+
         $(".email.section").hide();
         $(".password.input").hide();
         $(".email-submit").hide();
         $(".email-next").show();
         $(".email-input")[0].value = "";
+        $(".email-input")[0].style.borderBottom = "0.5px solid #3498db";
+        $(".sign-in-buttons").show("fast");
     });
 })
 
