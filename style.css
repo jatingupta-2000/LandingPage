@@ -8,8 +8,14 @@
 /* header */
 
 header {
+  background-color: #f7f7f7;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
+  padding: 20px;
+  margin-bottom: 50px;
+  opacity: 0.98;
   justify-content: space-between;
 }
 
@@ -314,6 +320,7 @@ header span {
   padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
+
   padding-bottom: 40px;
 }
 
@@ -335,9 +342,10 @@ header span {
 /* FOOTER SECTION */
 
 footer {
-  margin-top: -10%;
+  margin-top: 40px;
   display: flex;
   padding: 60px 100px;
+  flex-direction: column;
   background-color: #333;
   justify-content: space-evenly;
   align-items: center;
@@ -348,27 +356,24 @@ footer img {
 }
 
 .reach-links img {
-  display: none;
-  display: flex;
   padding: 10px;
+  margin: 10px;
   width: 100%;
+  border: 0.5px #f7f7f7 solid;
+  border-radius: 5px;
 }
 
 footer h1 {
+  margin-bottom: 3vh;
   font-size: 50px;
   color: #f7f7f7;
-  max-width: 20%;
 }
 
 /* Adding media querries */
 
 @media screen and (max-width: 990px) {
   header img {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    opacity: 0.5;
-    z-index: -1;
+    display: none;
   }
 
   .left-col-img {
@@ -380,6 +385,8 @@ footer h1 {
   }
 
   header h5 {
+    font-size: 30px;
+
     margin-left: 0;
   }
 
@@ -414,7 +421,7 @@ footer h1 {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -496,6 +503,7 @@ footer h1 {
   footer {
     text-align: left;
     padding: 40px 20px;
+    text-align: center;
   }
 
   footer h1 {
