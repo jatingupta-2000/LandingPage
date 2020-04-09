@@ -13,6 +13,7 @@ $(document).ready(function () {
 
             $(".email-next").hide("fast");
             $(".email-input").attr("disabled", true);
+            $(".email-input").css("color", "black");
             $(".email-submit").show("fast");
             $(".password-input").show("fast");
             $(".name-fname").show("fast");
@@ -31,6 +32,7 @@ $(document).ready(function () {
     $(".email-cancel").click(function (e) {
         e.preventDefault();
         $(".email-input").attr("disabled", false);
+
         $(".email-section").slideUp("fast");
 
         $(".password-input").hide("fast");
