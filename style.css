@@ -359,7 +359,7 @@ footer img {
   padding: 10px;
   margin: 10px;
   width: 100%;
-  border: 0.5px #f7f7f7 solid;
+  border: 1px #f7f7f7 solid;
   border-radius: 5px;
 }
 
@@ -386,7 +386,6 @@ footer h1 {
 
   header h5 {
     font-size: 30px;
-
     margin-left: 0;
   }
 
@@ -431,7 +430,6 @@ footer h1 {
   }
 
   .sign-in-buttons button {
-    width: 60%;
   }
 
   .email-section {
