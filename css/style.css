@@ -304,6 +304,7 @@ header span {
 
 .how-top-right-col img {
   max-width: 80%;
+  float: right;
 }
 
 .how-bottom-row {
