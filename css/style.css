@@ -58,6 +58,7 @@ header span {
 .welcome-title {
   font-size: 45px;
   font-weight: 600;
+  color: #333;
   text-align: center;
 }
 
@@ -416,10 +417,11 @@ footer h1 {
   .welcome-title {
     width: 100%;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 0;
+
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
 
