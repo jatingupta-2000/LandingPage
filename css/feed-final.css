@@ -2,6 +2,10 @@
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .tag {
   padding: 5px 10px;
   display: inline;
@@ -9,6 +13,7 @@
   font-weight: 300;
   margin: auto 5px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .javascript {
@@ -33,7 +38,7 @@ li {
 }
 
 .container {
-  margin: 50px 50px;
+  margin: 0px 50px;
   display: flex;
   flex-direction: row;
 }
@@ -46,31 +51,68 @@ li {
 
 .aside-top h3 {
   font-weight: 500;
+  font-size: 20px;
 }
 
 .top-languages {
   background-color: #f7f7f7;
   width: 90%;
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px 20px;
 }
 
+.follow {
+  padding: 2px 5px;
+  display: none;
+  float: right;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.follow:hover {
+  display: block;
+  background-color: rgb(191, 255, 96);
+  border-radius: 10px;
+
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.explore-tags,
 .top-organisations {
   margin-top: 50px;
   background-color: #f7f7f7;
   width: 90%;
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px 20px;
+}
+
+.top-heading {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top-heading img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.organisations-list,
+.language-list {
+  display: none;
 }
 
 .language-list li,
-.organisations-list li {
+.organisations-list li,
+.explore-list li {
   padding: 10px;
   padding-left: 5px;
 }
 
 .language-list li p,
-.organisations-list li p {
+.organisations-list li p,
+.explore-tags li {
   display: inline;
   padding-left: 5px;
   font-weight: 300;
@@ -176,12 +218,12 @@ li {
 /* card  */
 
 .card {
-  width: 70%;
+  width: 90%;
   background-color: #f7f7f7;
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -224,13 +266,24 @@ li {
   font-weight: 200;
 }
 
-.card-star {
+.card-save {
   float: right;
   margin: 50px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(58, 93, 206);
+  cursor: pointer;
+}
+
+.card-save:hover {
+  background-color: rgb(107, 141, 255);
+  transition-duration: 0.2s;
 }
 
 .card-description p {
-  margin: 10px 50px;
+  margin: 0px 50px;
+
   font-weight: 300;
 }
 
@@ -321,14 +374,14 @@ li {
     display: block;
   }
 
-  .card-star {
+  .card-save {
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
   }
 
-  .card-star img {
+  .card-save img {
     float: right;
   }
 

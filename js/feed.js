@@ -33,4 +33,16 @@ $(document).ready(function () {
             $('.dropdown-list-organisations').toggleClass("display-none");
         }
     });
+
+    $(".top-dropdown-organisations").click(function () {
+        $(".organisations-list").slideToggle("fast");
+    });
+
+    $(".top-dropdown-languages").click(function () {
+        $(".language-list").slideToggle("fast");
+    });
+
+
+
+
 });
