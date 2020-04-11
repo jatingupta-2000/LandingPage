@@ -1,0 +1,338 @@
+.display-none {
+  display: none;
+}
+
+.tag {
+  padding: 5px 10px;
+  display: inline;
+  border-radius: 500px;
+  font-weight: 300;
+  margin: auto 5px;
+  white-space: nowrap;
+}
+
+.javascript {
+  background-color: #ffee00;
+}
+
+.html {
+  background-color: #f59191;
+}
+
+.css {
+  background-color: #c2efff;
+}
+
+.white {
+  background-color: white;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* side container */
+
+.aside-top {
+  width: 20%;
+}
+
+.aside-top h3 {
+  font-weight: 500;
+}
+
+.top-languages {
+  background-color: #f7f7f7;
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.top-organisations {
+  margin-top: 50px;
+  background-color: #f7f7f7;
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.language-list li,
+.organisations-list li {
+  padding: 10px;
+  padding-left: 5px;
+}
+
+.language-list li p,
+.organisations-list li p {
+  display: inline;
+  padding-left: 5px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.language-list li img {
+  width: 10px;
+}
+
+/* cards container */
+
+.feed-main {
+  width: 85%;
+}
+
+.top-bar {
+  margin-bottom: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 5px #d4d4d4;
+}
+
+.search-bar {
+  width: 40%;
+}
+
+.search-bar-form input {
+  font-size: 15px;
+  outline: none;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border: none;
+  border-bottom: 0.1px solid rgb(155, 155, 155);
+  width: 100%;
+}
+
+.control-page-items {
+  width: 60%;
+}
+
+.filter-items {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-list {
+  position: absolute;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+}
+
+.dropdown-list li {
+  font-weight: 200;
+  color: #333;
+  padding: 10px;
+}
+
+.dropdown-list li:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-list p {
+  display: inline;
+  padding: 5px;
+}
+
+.dropdown-list img {
+  width: 10px;
+}
+
+.dropdown-label {
+  color: #333;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.dropdown-label img {
+  width: 15px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
+
+/* card  */
+
+.card {
+  width: 70%;
+  background-color: #f7f7f7;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.card-top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-top-row-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-profile-picture {
+  border-radius: 50%;
+  width: 8%;
+  margin: 20px;
+}
+
+.project-info {
+  margin: 20px;
+}
+
+.project-info p {
+  display: inline;
+}
+
+.project-name {
+  color: #0e69a5;
+  font-weight: 500;
+  font-size: 26px;
+}
+.project-organisation-name {
+  font-weight: 300;
+}
+.project-date {
+  font-weight: 200;
+}
+
+.card-star {
+  float: right;
+  margin: 50px;
+}
+
+.card-description p {
+  margin: 10px 50px;
+  font-weight: 300;
+}
+
+.card-description span {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.card-description span img {
+  margin-bottom: 1px;
+  vertical-align: middle;
+}
+
+.card-footer {
+  border-top: 1px solid rgba(216, 216, 216, 0.459);
+  padding: 20px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .aside-top {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .top-languages,
+  .top-organisations {
+    width: 100%;
+  }
+
+  .feed-main {
+    width: 100%;
+  }
+
+  .top-bar {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .control-page-items {
+    width: 100%;
+  }
+
+  .filter-items {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .dropdown-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+
+  .card-top-row {
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card-profile-picture {
+    width: 15%;
+    margin: 10px;
+  }
+
+  .project-info p {
+    display: block;
+  }
+
+  .card-star {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+  }
+
+  .card-star img {
+    float: right;
+  }
+
+  .card-footer {
+    line-height: 50px;
+  }
+}

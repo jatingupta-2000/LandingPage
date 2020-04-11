@@ -356,6 +356,10 @@ footer img {
   max-width: 150px;
 }
 
+.issues-pullrequests {
+  text-align: end;
+}
+
 .reach-links img {
   padding: 10px;
   margin: 10px;
@@ -383,6 +387,7 @@ footer h1 {
   header {
     font-size: medium;
     justify-content: center;
+    position: unset;
   }
 
   header h5 {
@@ -478,7 +483,7 @@ footer h1 {
   }
 
   .how-top-left-col h1 {
-    line-height: 60px;
+    line-height: 50px;
     font-size: 55px;
   }
 
@@ -505,5 +510,9 @@ footer h1 {
 
   footer h1 {
     font-size: 20px;
+  }
+
+  .tag {
+    font-size: 12px;
   }
 }
