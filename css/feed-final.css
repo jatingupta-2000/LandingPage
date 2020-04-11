@@ -7,7 +7,7 @@ a {
 }
 
 .tag {
-  padding: 5px 10px;
+  padding: 3px 8px;
   display: inline;
   border-radius: 500px;
   font-weight: 300;
@@ -272,7 +272,8 @@ li {
   color: white;
   padding: 5px;
   border-radius: 5px;
-  background-color: rgb(58, 93, 206);
+  font-size: 10px;
+  background-color: rgb(96, 127, 231);
   cursor: pointer;
 }
 
@@ -283,18 +284,14 @@ li {
 
 .card-description p {
   margin: 0px 50px;
+  line-height: 25px;
 
   font-weight: 300;
-}
-
-.card-description span {
-  color: #3498db;
-  font-weight: 500;
-}
-
-.card-description span img {
-  margin-bottom: 1px;
-  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .card-footer {
@@ -364,6 +361,7 @@ li {
 
   .card {
     width: 95%;
+    margin: 5px auto;
   }
 
   .card-profile-picture {
@@ -371,22 +369,39 @@ li {
     margin: 10px;
   }
 
+  .project-name {
+    font-size: 20px;
+  }
+  .project-organisation-name {
+    font-size: 12px;
+  }
+
   .project-info p {
     display: block;
+  }
+
+  .card-description p {
+    max-height: 100px;
+    -webkit-line-clamp: 3;
+    margin: 5px;
+    font-weight: 200;
   }
 
   .card-save {
     margin: 0;
     margin-top: auto;
+    font-size: 8px;
     margin-bottom: auto;
     margin-right: 10px;
   }
 
-  .card-save img {
-    float: right;
-  }
-
   .card-footer {
     line-height: 50px;
+  }
+  .card-footer {
+    line-height: 25px;
+  }
+  .tag {
+    margin: 5px;
   }
 }
