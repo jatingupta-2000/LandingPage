@@ -13,6 +13,7 @@ a {
   font-weight: 300;
   margin: auto 5px;
   white-space: nowrap;
+  font-size: 10px;
   cursor: pointer;
 }
 
@@ -50,8 +51,8 @@ li {
 }
 
 .aside-top h3 {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .top-languages {
@@ -62,10 +63,12 @@ li {
 }
 
 .follow {
-  padding: 2px 5px;
+  padding: 0px 5px;
+  margin-top: 5px;
   display: none;
   float: right;
-  font-size: 20px;
+  font-size: 10px;
+  opacity: 0.2;
   font-weight: 900;
 }
 
@@ -73,6 +76,7 @@ li {
   display: block;
   background-color: rgb(191, 255, 96);
   border-radius: 10px;
+  opacity: 1;
 
   transition-duration: 0.2s;
   cursor: pointer;
@@ -152,8 +156,15 @@ li {
   padding: 5px;
   background-color: #f7f7f7;
   border: none;
+
   border-bottom: 0.1px solid rgb(155, 155, 155);
+
   width: 100%;
+}
+
+.search-bar-form input:focus {
+  border-bottom: 2px solid rgb(45, 150, 182);
+  transition-duration: 1s;
 }
 
 .control-page-items {
@@ -259,7 +270,7 @@ li {
   font-weight: 500;
   font-size: 26px;
   padding-right: 3px;
-  border-right: 1px rgb(150, 150, 150) solid;
+  border-right: 2px rgb(150, 150, 150) solid;
 }
 .project-organisation-name {
   font-weight: 200;
@@ -292,6 +303,8 @@ li {
 }
 
 .likes-section {
+  cursor: pointer;
+  font-weight: 300;
   margin: auto 10px;
 }
 
@@ -301,7 +314,7 @@ li {
 }
 
 .card-description-text {
-  margin: 0px 50px 0px 20px;
+  margin: 0px 30px 0px 20px;
   line-height: 25px;
 
   font-weight: 300;
@@ -319,6 +332,21 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.issues-pullrequests div {
+  border: 0.5px solid rgb(47, 196, 97);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.issues-pullrequests div:hover {
+  box-shadow: 0px 2px 5px rgb(209, 209, 209);
+  transition-duration: 0.1s;
+}
+
+.issues-pullrequests span {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 990px) {
