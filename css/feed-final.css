@@ -258,9 +258,12 @@ li {
   color: #0e69a5;
   font-weight: 500;
   font-size: 26px;
+  padding-right: 3px;
+  border-right: 1px rgb(150, 150, 150) solid;
 }
 .project-organisation-name {
-  font-weight: 300;
+  font-weight: 200;
+  color: #333;
 }
 .project-date {
   font-weight: 200;
@@ -282,8 +285,23 @@ li {
   transition-duration: 0.2s;
 }
 
-.card-description p {
-  margin: 0px 50px;
+.like-thumbs {
+  width: 18px;
+  margin: 0 5px;
+  vertical-align: auto;
+}
+
+.likes-section {
+  margin: auto 10px;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-description-text {
+  margin: 0px 50px 0px 20px;
   line-height: 25px;
 
   font-weight: 300;
@@ -321,6 +339,7 @@ li {
   .top-organisations,
   .explore-tags {
     width: 100%;
+    margin-top: 20px;
   }
 
   .feed-main {
@@ -329,6 +348,7 @@ li {
 
   .top-bar {
     width: 95%;
+    margin-bottom: 30px;
     flex-direction: column;
   }
 
@@ -370,7 +390,9 @@ li {
   }
 
   .project-name {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
   }
   .project-organisation-name {
     font-size: 12px;
@@ -380,7 +402,7 @@ li {
     display: block;
   }
 
-  .card-description p {
+  .card-description-text {
     max-height: 100px;
     -webkit-line-clamp: 3;
     margin: 5px;
