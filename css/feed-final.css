@@ -186,6 +186,10 @@ li {
   flex-direction: row;
 }
 
+.filter-mobile {
+  display: none;
+}
+
 .dropdown-list {
   position: absolute;
   background-color: #f7f7f7;
@@ -374,6 +378,7 @@ li {
   .aside-top {
     width: 95%;
     margin-bottom: 30px;
+    display: none;
   }
 
   .top-languages,
@@ -395,9 +400,16 @@ li {
 
   .search-bar {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-bar-form {
+    width: 60%;
   }
 
   .control-page-items {
+    display: none;
     width: 100%;
   }
 
@@ -409,11 +421,65 @@ li {
     display: flex;
   }
 
+  .filter-mobile {
+    display: block;
+    font-weight: 200;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .filter-mobile img {
+    width: 12px;
+    margin: auto;
+  }
+
+  .filter-mobile-dropdown {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
   .dropdown-label {
     display: flex;
     justify-content: space-between;
     padding: 15px 10px;
-    border-bottom: 1px solid #cfcfcf;
+    flex-direction: row;
+  }
+
+  .filter-left-col,
+  .filter-right-col {
+    width: 50%;
+  }
+  .filter-left-col p,
+  .filter-right-col p {
+    display: inline;
+    padding: 0 10px;
+    font-weight: 200;
+  }
+
+  .filter-mobile-dropdown li {
+    font-weight: 200;
+    cursor: pointer;
+    width: fit-content;
+    padding: 5px;
+    margin: 15px;
+  }
+
+  .filter-mobile-dropdown li:hover {
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    background-color: rgb(236, 236, 236);
+  }
+
+  .filter-mobile-dropdown img {
+    width: 10px;
+  }
+
+  .dropdown-list-filter {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-top-row {
