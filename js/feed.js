@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(".dropdown-list-organisations").toggleClass("display-none");
     });
     $(".filter-mobile").click(function (e) {
-        $(".filter-mobile-dropdown").slideToggle();
+        $(".filter-mobile-hide").slideToggle();
     });
 
     $(document).click(function (event) {

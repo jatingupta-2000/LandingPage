@@ -440,6 +440,9 @@ li {
     flex-direction: row;
     margin-top: 20px;
   }
+  .filter-mobile-hide {
+    display: none;
+  }
 
   .dropdown-label {
     display: flex;
