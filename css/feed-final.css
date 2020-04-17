@@ -91,7 +91,7 @@ li {
 
 .explore-tags,
 .top-organisations {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #f7f7f7;
   width: 90%;
   border-radius: 10px;
@@ -242,13 +242,14 @@ li {
 /* card  */
 
 .card {
-  width: 80%;
+  width: 90%;
   background-color: #f7f7f7;
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 5px #e4e4e4;
 }
 
 .card-top-row {
