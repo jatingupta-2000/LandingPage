@@ -16,6 +16,7 @@ a {
   white-space: nowrap;
   font-size: 10px;
   cursor: pointer;
+  outline: none;
 }
 
 .tag:hover {
