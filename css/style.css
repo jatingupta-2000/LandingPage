@@ -10,8 +10,10 @@
 header {
   background-color: #f7f7f7;
   position: sticky;
+
   top: 0;
   display: flex;
+  z-index: 1;
   flex-direction: row;
   padding: 10px 25px;
   margin-bottom: 20px;

@@ -1,375 +1,98 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  /* header */
-  
-  header {
-    background-color: #f7f7f7;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
-    margin-bottom: 50px;
-    opacity: 0.98;
-    justify-content: space-between;
-  }
-  
-  header h5 {
-    margin-left: 3vw;
-    font-size: 25px;
-    font-weight: 450;
-  }
-  
-  header span {
-    color: #3498db;
-  }
-  
-  /* main content */
-  
-  .row {
-    display: flex;
-  }
-  
-  .left-col {
-    width: 30%;
-    align-items: center;
-  }
-  
-  .left-col-img {
-    width: 35%;
-  }
-  
-  .left-col-img img {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  
-  .landing-container {
-    padding-top: 10vh;
-    padding-right: 3vw;
-    padding-left: 3vw;
-  }
-  
-  .welcome-title {
-    font-size: 45px;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
-  }
-  
-  .landing-text {
-    padding-top: 20px;
-    font-size: 25px;
-    font-weight: 200;
-    text-align: center;
-  }
-  
-  .landing-text span {
-    color: #196598;
-  
-    font-weight: normal;
-  }
-  
-  .sign-in-buttons {
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .sign-in-buttons button {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2vh;
-    border-radius: 5px;
-    border: none;
-    width: 220px;
-    min-height: 50px;
-    justify-content: space-evenly;
-  
-    box-shadow: 1px 1px 3px rgb(90, 90, 90);
-  }
-  
-  .sign-in-buttons button:hover {
-    cursor: pointer;
-  }
-  
-  .sign-in-buttons button:focus {
-    outline: none;
-  }
-  
-  .email-button:hover {
-    background-color: #ce0707;
-  }
-  .google-button:hover {
-    background-color: #ebebeb;
-  }
-  .github-button:hover {
-    background-color: #3f3f3f;
-  }
-  
-  .sign-in-buttons button img {
-    width: 10%;
-  }
-  
-  .sign-in-buttons button p {
-    font-size: small;
-  }
-  
-  .email-button {
-    background-color: #eb0606;
-    color: white;
-  }
-  
-  .github-button {
-    background-color: black;
-    color: white;
-  }
-  
-  .right-col {
-    width: 35%;
-    float: right;
-  }
-  
-  .right-col img {
-    width: 100%;
-  }
-  
-  /* email input */
-  
-  .email-section {
-    display: none;
-    margin-top: 40px;
-    max-width: 100%;
-    padding: 10px 20px 20px 10px;
-    margin-bottom: 20px;
-    box-shadow: 0.5px 0.5px 6px #e6e6e6;
-  }
-  
-  .email-section h3 {
-    width: 100%;
-    color: #125581;
-    font-size: 30px;
-    font-weight: 350;
-  }
-  
-  .sign-in-input {
-    display: block;
-    width: 100%;
-    border: none;
-    font-size: medium;
-    font-weight: 300;
-    padding-top: 15px;
-    padding-left: 5px;
-    margin-bottom: 20px;
-    border-bottom: 0.5px solid #c2c2c2;
-  }
-  
-  .name {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .name-fname {
-    display: none;
-    margin-right: 13px;
-  }
-  
-  .name-lname {
-    display: none;
-    margin-left: 13px;
-  }
-  
-  .password-input {
-    display: none;
-  }
-  
-  .sign-in-input:focus {
-    outline: none;
-    border-bottom: 0.5px solid #3498db;
-  }
-  
-  .email-buttons {
-    margin-top: 30px;
-  
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .email-buttons button {
-    width: fit-content;
-    padding: 0 20px 0 20px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: none;
-    cursor: pointer;
-    border: none;
-    height: 35px;
-  }
-  
-  .email-next {
-    color: white;
-    background-color: #3498db;
-  }
-  
-  .email-submit {
-    display: none;
-    color: white;
-    background-color: #3498db;
-  }
-  
-  .email-next:hover,
-  .email-submit:hover {
-    background-color: #1a6ea7;
-  }
-  
-  .email-cancel:hover {
-    background-color: #ebebeb;
-  }
-  
-  .email-buttons button:focus {
-    outline: none;
-  }
-  
-  /* ABOUT SECTION */
-  
-  .about-us-container {
-    margin-top: -1vh;
-    background-color: #f7f7f7;
-    display: flex;
-  }
-  
-  .about-left-col {
-    max-width: 30%;
-  }
-  
-  .about-left-col img {
-    max-width: 100%;
-    padding-left: 50px;
-  }
-  
-  .about-right-col {
-    max-width: 60%;
-    text-align: center;
-    margin: -30px auto 0 auto;
-  }
-  
-  .about-right-col h1 {
-    font-weight: 800;
-    font-size: 70px;
-    color: #1583cc;
-  }
-  
-  .about-right-col p {
-    font-weight: 250;
-    font-size: 18px;
-  }
-  
-  /* org */
-  .org{
-    
-    /* border-radius: 6px; */
-    background-color: #000000;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #ffffff;
-    padding-bottom: 40px; 
-    /* margin-left:100px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  z-index: 1;
+  margin-bottom: 0;
+}
+/* org */
+
+.top-bar {
+  width: 80%;
+}
+.org {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 6px; */
+  background-color: #333;
+  height: 250px;
+  padding-right: 80px;
+  padding-left: 80px;
+  color: #ffffff;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  /* margin-left:100px;
     margin-right:100px; */
-  }
+}
 
-    .org-heading{
-        font-weight: 800;
-        font-size: 30px;
-        color: #3498db;
-    }
-    .search{
-    display: flex;
-    justify-content: space-around;
-    border-radius: 6px;
-    background-color: #f7f7f7;
-    padding-top: 0.1px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 100px;
-    padding-bottom: 0.1px; 
-    margin-left:100px;
-    margin-right:100px;
-    }
-    .input{
-        display: block;
-        width: 43%;
-        border: none;
-        font-size: medium;
-        font-weight: 300;
-        padding-top: 15px;
-        padding-left: 5px;
-        border-bottom: 0.5px solid #c2c2c2;
-        margin-left: 10px;
-        margin-right: 100px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #f7f7f7;
-    }
+.org-heading {
+  font-weight: 700;
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: #3498db;
+}
 
-    
-    .how-flex{
-        display: flex;
-        justify-content: space-evenly;
-        
-        
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      padding-top: 20px;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-      background-color: #e6e6e6;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .card-org{
-        width: 30%;
-        border-radius: 6px;
-        background-color: #f7f7f7;
-        padding-top: 0.1px;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-top: 100px;
-        padding-bottom: 0.1px; 
-        margin-left:100px;
-        margin-right:100px;
-    }
-    .orgdes{
-      padding-top:30px;
-      padding-bottom: 30px;
-    }
-    .orghead{
-      font-weight: 800;
-      font-size: 22px;
-      padding-top: 15px;
-    }
-    /* .button{
+.right-col img {
+  position: relative;
+  top: 70px;
+  width: 350px;
+  z-index: 0;
+}
+
+.cards-grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 80px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-org {
+  border-radius: 16px;
+  background-color: #f7f7f7;
+  padding-top: 0.1px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.org-view {
+  background-color: #c2effc;
+  border: none;
+  padding: 8px;
+  font-size: 10px;
+  margin-top: 10px;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.org-view:hover {
+  background-color: #a3ddff;
+  box-shadow: 1px 1px 5px #c9c9c9;
+  transition-duration: 0.2s;
+}
+
+.orgdes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 200;
+}
+.org-name {
+  font-weight: 500;
+  font-size: 26px;
+  color: #00558e;
+  padding-top: 15px;
+}
+/* .button{
         display: flex;
         flex-direction: row;
         margin-top: 2vh;
@@ -387,309 +110,49 @@
         box-shadow: 1px 1px 3px rgb(90, 90, 90);
     } */
 
-    .button-lang1{
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        border-radius: 10px;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-bottom: 5px;
-        border: none;
-        width: 80px;
-        min-height: 20px;
-        justify-content: space-evenly;
-        background-color:  #ffee00;
-        color: black;
-        box-shadow: 1px 1px 1px rgb(90, 90, 90);
-    }
-    .button-lang2{
-      margin-top: 2vh;
-      margin-bottom: 2vh;
-      border-radius: 10px;
-      padding-top: 5px;
-      padding-left: 5px;
-      padding-bottom: 5px;
-      border: none;
-      width: 80px;
-      min-height: 20px;
-      justify-content: space-evenly;
-      background-color:  #f59191;
-      color: black;
-      box-shadow: 1px 1px 1px rgb(90, 90, 90);
-  }
-  .button-lang3{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    border: none;
-    width: 80px;
-    min-height: 20px;
-    justify-content: space-evenly;
-    background-color:  #c2efff;
-    color: black;
-    box-shadow: 1px 1px 1px rgb(90, 90, 90);
-}
-.bottomflex{
-  display:flex;
+.bottomflex {
+  display: flex;
   flex-direction: column;
 }
-.line{
+.line {
   display: flex;
   justify-content: space-between;
-
 }
-.view{
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  border-radius: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  width: 50px;
-  min-height: 20px;
+
+.org-tags {
+  padding-bottom: 20px;
+}
+/* FOOTER SECTION */
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  padding: 60px 100px;
+  flex-direction: column;
+  background-color: #333;
   justify-content: space-evenly;
-  background-color:  #c2efff;
-  color: black;
-  box-shadow: 1px 1px 3px rgb(90, 90, 90);
+  align-items: center;
 }
 
-  /* HOW OSC WORKS SECTION */
-  
-  .how-container {
-    margin: 30px 50px 0 50px;
-  }
-  
-  .how-top-row {
-    display: flex;
-  }
-  
-  .how-top-left-col {
-    max-width: 60%;
-    text-align: center;
-  }
-  
-  .how-top-left-col h1 {
-    font-weight: 800;
-    font-size: 70px;
-    color: #1583cc;
-    padding-bottom: 50px;
-  }
-  
-  .how-top-left-col p {
-    font-weight: 250;
-    font-size: 18px;
-  }
-  
-  .how-top-right-col {
-    max-width: 40%;
-  }
-  
-  .how-top-right-col img {
-    max-width: 80%;
-    float: right;
-  }
-  
-  .how-bottom-row {
-    padding: 100px 40px 60px 40px;
-    justify-content: space-evenly;
-    display: flex;
-    text-align: center;
-  }
-  
-  .how-card {
-    max-width: 20%;
-    border-radius: 6px;
-    background-color: #f7f7f7;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-  
-    padding-bottom: 40px;
-  }
-  
-  .how-card img {
-    max-width: 35px;
-    padding-bottom: 30px;
-  }
-  
-  .how-card h3 {
-    font-size: 25px;
-    color: #1583cc;
-    padding-bottom: 30px;
-  }
-  
-  .how-card p {
-    font-weight: 200;
-  }
-  
-  /* FOOTER SECTION */
-  
-  footer {
-    margin-top: 40px;
-    display: flex;
-    padding: 60px 100px;
-    flex-direction: column;
-    background-color: #333;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  footer img {
-    max-width: 150px;
-  }
-  
-  .reach-links img {
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
-    border: 1px #f7f7f7 solid;
-    border-radius: 5px;
-  }
-  
-  footer h1 {
-    margin-bottom: 3vh;
-    font-size: 50px;
-    color: #f7f7f7;
-  }
-  
-  /* Adding media querries */
-  
-  @media screen and (max-width: 990px) {
-    header img {
-      display: none;
-    }
-  
-    .left-col-img {
-      display: none;
-    }
-    header {
-      font-size: medium;
-      justify-content: center;
-    }
-  
-    header h5 {
-      font-size: 30px;
-      margin-left: 0;
-    }
-  
-    .landing-container {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-  
-    .row {
-      flex-direction: column-reverse;
-    }
-  
-    .row div {
-      width: 100%;
-    }
-  
-    .right-col img {
-      width: 70%;
-      padding-right: 0;
-      margin-right: 15%;
-      margin-left: 15%;
-    }
-  
-    .landing-text {
-      font-size: 18px;
-      text-align: center;
-    }
-  
-    .welcome-title {
-      width: 100%;
-      text-align: left;
-      padding-top: 0;
-  
-      padding-left: 20px;
-      padding-right: 20px;
-      font-size: 35px;
-      text-align: center;
-    }
-  
-    .sign-in-buttons {
-      align-items: center;
-      padding-left: 0;
-    }
-  
-    .email-section {
-      max-width: 100%;
-    }
-  
-    .email-section h3 {
-      text-align: center;
-    }
-  
-    .about-us-container {
-      display: block;
-    }
-    .about-us-container div {
-      max-width: 80%;
-    }
-  
-    .about-left-col {
-      padding-bottom: 50px;
-  
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    .about-left-col img {
-      padding-left: 0;
-    }
-  
-    .about-right-col h1 {
-      line-height: 60px;
-      font-size: 55px;
-    }
-  
-    .about-right-col p {
-      padding-top: -80px;
-    }
-  
-    .how-top-row {
-      text-align: center;
-      flex-direction: column-reverse;
-    }
-  
-    .how-top-row div {
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .how-top-left-col h1 {
-      line-height: 60px;
-      font-size: 55px;
-    }
-  
-    .how-bottom-row {
-      flex-direction: column;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .how-card {
-      max-width: 220px;
-      margin-left: auto;
-      margin-right: auto;
-      margin: 20px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    footer {
-      text-align: left;
-      padding: 40px 20px;
-      text-align: center;
-    }
-  
-    footer h1 {
-      font-size: 20px;
-    }
-  }
-  
+footer img {
+  max-width: 150px;
+}
+
+.reach-links img {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  border: 1px #f7f7f7 solid;
+  border-radius: 5px;
+}
+
+footer h1 {
+  margin-bottom: 3vh;
+  font-size: 50px;
+  color: #f7f7f7;
+}
+
+/* Adding media querries */
+
+@media screen and (max-width: 990px) {
+}

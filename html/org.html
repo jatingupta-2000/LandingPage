@@ -12,173 +12,318 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="../css/feed-final.css" />
+    <link rel="stylesheet" href="../css/template.css" />
     <link rel="stylesheet" href="../css/org.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>OpenSourceCode</title>
   </head>
   <body>
     <header>
-      <h5 class="title">OPEN<span>&ltSOURCE&gt</span>CODE</h5>
+      <a href="http://"><img src="../SVG/OPENSOURCECODE-title.svg" /></a>
     </header>
 
     <!-- Start here -->
     <div class="org">
-      <p class="org-heading">ORGANISATIONS</p>
-      <p>Find an organisation to contribute to</p>
-      <p>Cant find the organisation you are searching for? Search below to narrow down your results</p>
-    </div>
-    <div class="search">
-      <input class="input" placeholder="Search" />
-      <div class="dropdown">
-        <span>All Categories</span>
-        <div class="dropdown-content">
-          <p>Trending</p>
-          <p>New</p>
-          <p>Best</p>
-        </div>
+      <div class="left-col">
+        <p class="org-heading">ORGANISATIONS</p>
+
+        <p>Find an organisation to contribute to</p>
+        <p>
+          Cant find the organisation you are searching for? Search below to
+          narrow down your results
+        </p>
+      </div>
+      <div class="right-col">
+        <img src="../SVG/organisation-top-image.png" alt="" srcset="" />
       </div>
     </div>
-    <div class="bottomflex">
-      <div class="how-flex">
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
-          </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
-          </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
-          </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
-          </button>
+    <div class="top-bar">
+      <div class="search-bar">
+        <form class="search-bar-form">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search Projects"
+          />
+        </form>
+        <div class="filter-mobile display-none">
+          Filter <img src="../SVG/dropdown-arrow.svg" />
         </div>
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
+      </div>
+      <div class="filter-mobile-hide">
+        <div class="filter-mobile-dropdown display-none">
+          <div class="filter-left-col">
+            <ul class="dropdown-list-filter">
+              <li>
+                <img src="../SVG/yellow.svg" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="../SVG/peach.svg" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="../SVG/sea-green.svg" />
+                <p>CSS</p>
+              </li>
+
+              <li>
+                <img src="../SVG/pink.svg" />
+                <p>Python</p>
+              </li>
+            </ul>
           </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
+          <div class="filter-right-col display-non">
+            <ul class="dropdown-list-filter">
+              <li>New</li>
+              <li>Top</li>
+              <li>Hot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="control-page-items">
+        <ul class="filter-items">
+          <li class="dropdown filter sort">
+            <a class="dropdown-label dropdown-label-sort"
+              >Newest <img src="../SVG/dropdown-arrow.svg"
+            /></a>
+            <ul class="dropdown-list dropdown-list-sort display-none">
+              <li>New</li>
+              <li>Top</li>
+              <li>Hot</li>
+            </ul>
+          </li>
+          <li class="dropdown filter language-sort">
+            <a class="dropdown-label dropdown-label-languages"
+              >All languages <img src="../SVG/dropdown-arrow.svg"
+            /></a>
+            <ul class="dropdown-list dropdown-list-languages display-none">
+              <li>
+                <img src="../SVG/yellow.svg" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="../SVG/peach.svg" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="../SVG/sea-green.svg" />
+                <p>CSS</p>
+              </li>
+
+              <li>
+                <img src="../SVG/pink.svg" />
+                <p>Python</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
           </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
+          <button class="tag html" type="submit">
+            Node.js
           </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
+          <button class="tag css" type="submit">
+            Node.js
           </button>
         </div>
       </div>
-      <div class="how-flex">
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
-          </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
-          </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
-          </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
-          </button>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
         </div>
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
-          </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
           </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
+          <button class="tag html" type="submit">
+            Node.js
           </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
+          <button class="tag css" type="submit">
+            Node.js
           </button>
         </div>
       </div>
-      <div class="how-flex">
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
-          </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
           </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
+          <button class="tag html" type="submit">
+            Node.js
           </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
+          <button class="tag css" type="submit">
+            Node.js
           </button>
         </div>
-        <div class="card-org">
-          <div class="line">
-            <p class="orghead">ORGANISATION #1</p>
-            <button class="view" type="submit">
-              <p>VIEW</p>
-            </button>
-          </div>
-          <p class="orgdes">
-            Description of organisation. Random texts coming here and there.
-            Lets enter something to fill these spaces. This is just a sample of
-            the text that is to be enterd into the boxes.
-          </p>
-          <button class="button-lang1" type="submit">
-            <p>React.js</p>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
           </button>
-          <button class="button-lang2" type="submit">
-            <p>Node.js</p>
+          <button class="tag html" type="submit">
+            Node.js
           </button>
-          <button class="button-lang3" type="submit">
-            <p>Node.js</p>
+          <button class="tag css" type="submit">
+            Node.js
+          </button>
+        </div>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
+          </button>
+          <button class="tag html" type="submit">
+            Node.js
+          </button>
+          <button class="tag css" type="submit">
+            Node.js
+          </button>
+        </div>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
+          </button>
+          <button class="tag html" type="submit">
+            Node.js
+          </button>
+          <button class="tag css" type="submit">
+            Node.js
+          </button>
+        </div>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
+          </button>
+          <button class="tag html" type="submit">
+            Node.js
+          </button>
+          <button class="tag css" type="submit">
+            Node.js
+          </button>
+        </div>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
+          </button>
+          <button class="tag html" type="submit">
+            Node.js
+          </button>
+          <button class="tag css" type="submit">
+            Node.js
+          </button>
+        </div>
+      </div>
+      <div class="card-org">
+        <div class="line">
+          <p class="org-name">ORGANISATION #1</p>
+          <button class="org-view" type="submit">VIEW</button>
+        </div>
+        <p class="orgdes">
+          Description of organisation. Random texts coming here and there. Lets
+          enter something to fill these spaces. This is just a sample of the
+          text that is to be enterd into the boxes.
+        </p>
+        <div class="org-tags">
+          <button class="tag javascript" type="submit">
+            React.js
+          </button>
+          <button class="tag html" type="submit">
+            Node.js
+          </button>
+          <button class="tag css" type="submit">
+            Node.js
           </button>
         </div>
       </div>
     </div>
+
     <!-- End here -->
 
     <footer>
@@ -189,7 +334,7 @@
         <a href="http://"><img src="../SVG/footer-linkedin.svg" /></a>
       </div>
     </footer>
-
+    <script src="../js/feed.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/landingPage.js"></script>
   </body>

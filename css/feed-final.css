@@ -10,6 +10,7 @@ a {
   padding: 3px 8px;
   display: inline;
   border-radius: 500px;
+  border: none;
   font-weight: 300;
   margin: auto 5px;
   white-space: nowrap;
@@ -198,10 +199,12 @@ li {
   margin-left: 10px;
   border: 1px solid #ececec;
   border-radius: 5px;
+  width: 200px;
 }
 
 .dropdown-list li {
   font-weight: 200;
+
   color: #333;
   padding: 10px;
 }
