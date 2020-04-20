@@ -96,10 +96,17 @@
               placeholder="A short bio of less than 120 characters"
             />
             <p>Skills</p>
-            <input class="input-skills" placeholder="Enter your skills" />
+            <input
+              class="input-skills"
+              id="myInput"
+              placeholder="Enter your skills"
+            />
           </div>
           <div class="script">
+            <span onclick="newElement()" class="addBtn">Add</span>
             <p>Press Enter to add the skill. Enter minimum five skills</p>
+
+            <ul id="myUL"></ul>
           </div>
         </div>
       </div>
@@ -133,32 +140,21 @@
             </p>
           </div>
           <div class="qns">
+            <p>Website</p>
+            <input class="input" placeholder="https://your-website.com/" />
             <p>Github</p>
             <input class="input" placeholder="https://github.com/" />
             <p>LinkedIn</p>
             <input class="input" placeholder="https://linkedin.com/in/" />
-            <p>Facebook</p>
-            <input class="input" placeholder="https://facebook.com/" />
+
             <p>Twitter</p>
             <input class="input" placeholder="https://twitter.com/" />
-          </div>
-          <div class="script">
-            <p>Press Enter to add the skill. Enter minimum five skills</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- End here -->
-
-    <footer>
-      <h1>REACH OUT TO US ON.</h1>
-      <div class="reach-links">
-        <a href="http://"><img src="../SVG/footer-github.svg" /></a>
-        <a href="http://"><img src="../SVG/footer-slack.svg" /></a>
-        <a href="http://"><img src="../SVG/footer-linkedin.svg" /></a>
-      </div>
-    </footer>
 
     <script src="../js/setting.js"></script>
     <script src="../js/app.js"></script>

@@ -21,10 +21,9 @@ header {
   justify-content: space-between;
 }
 
-header h5 {
-  margin-left: 3vw;
-  font-size: 25px;
-  font-weight: 450;
+header img {
+  width: 200px;
+  padding-top: 5px;
 }
 
 header span {
@@ -355,7 +354,7 @@ footer {
 }
 
 footer img {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 .issues-pullrequests {
@@ -363,11 +362,15 @@ footer img {
 }
 
 .reach-links img {
-  padding: 10px;
   margin: 10px;
-  width: 100%;
+
   border: 1px #f7f7f7 solid;
   border-radius: 5px;
+}
+
+.reach-links img:hover {
+  background-color: #648cc0;
+  transition-duration: 0.1s;
 }
 
 footer h1 {

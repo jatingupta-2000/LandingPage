@@ -267,7 +267,7 @@ li {
 
 .card-profile-picture {
   border-radius: 50%;
-  width: 8%;
+  width: 6%;
   margin: 20px;
 }
 
@@ -301,7 +301,7 @@ li {
   padding: 5px;
   border-radius: 5px;
   font-size: 10px;
-  background-color: rgb(223, 229, 248);
+  background-color: rgb(203, 214, 252);
   cursor: pointer;
 }
 
