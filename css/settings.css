@@ -99,7 +99,7 @@
   padding-top: 15px;
   padding-left: 5px;
   margin-bottom: 20px;
-  margin-top: 40px;
+  outline: none;
   border-bottom: 0.5px solid #c2c2c2;
 }
 
@@ -111,8 +111,41 @@
   font-weight: 300;
   padding-top: 15px;
   padding-left: 5px;
+  outline: none;
   margin-bottom: 20px;
   border-bottom: 0.5px solid #c2c2c2;
+}
+
+#myUL {
+  margin-top: 20px;
+}
+
+#myUL li {
+  color: #333333;
+  list-style-type: none;
+  margin: 5px;
+  width: 200px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #333333;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.close {
+  float: right;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.addBtn {
+  display: inline-block;
+  border-radius: 10px;
+  color: #757575;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
 }
 .letstart {
   text-align: left;
