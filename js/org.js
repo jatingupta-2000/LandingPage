@@ -6,15 +6,15 @@ var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 
 var i;
-for(i = 0; i<viewBtn.length; i++){
+for (i = 0; i < viewBtn.length; i++) {
 
-    viewBtn[i].addEventListener('click', function (){
-        pop.style.display = 'block';
-        console.log(123)
-});
+    viewBtn[i].addEventListener('click', function () {
+        $(".pop").fadeIn("fast");
+        console.log(viewBtn)
+    });
 }
 
-closeBtn.addEventListener('click', function (){
-    pop.style.display = 'none';
+closeBtn.addEventListener('click', function () {
+    $(".pop").fadeOut("fast");
     // console.log(123)
 });

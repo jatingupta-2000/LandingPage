@@ -21,6 +21,7 @@ header {
   /* border-radius: 6px; */
   background-color: #333;
   height: 250px;
+  padding-top: 40px;
   padding-right: 80px;
   padding-left: 80px;
   color: #ffffff;
@@ -40,6 +41,7 @@ header {
 .right-col img {
   position: relative;
   top: 70px;
+  float: right;
   width: 350px;
   z-index: 0;
 }
@@ -52,6 +54,7 @@ header {
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .card-org {
@@ -65,7 +68,6 @@ header {
 }
 
 .org-view {
-  background-color: #c2effc;
   border: none;
   padding: 8px;
   font-size: 7px;
@@ -73,13 +75,16 @@ header {
   height: fit-content;
   cursor: pointer;
   outline: none;
+  background: none;
   border-radius: 10px;
 }
 
 .org-view:hover {
-  background-color: #a3ddff;
-  box-shadow: 1px 1px 5px #c9c9c9;
-  transition-duration: 0.2s;
+  background-color: none;
+}
+
+.org-view img {
+  width: 18px;
 }
 
 .orgdes {
@@ -124,73 +129,75 @@ header {
   padding-bottom: 20px;
 }
 
-.org-view:hover{
+.org-view:hover {
   background: #00558e;
 }
 
-.pop{
-  display:none;
+.pop {
+  display: none;
   position: fixed;
-  z-index:1;
-  left:0;
-  top:0;
+  z-index: 1;
+  left: 0;
+  top: 0;
   height: 100%;
-  width:100%;
-  overflow:auto;
-  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 }
-.pop-content{
+.pop-content {
   background-color: white;
   margin-top: 100px;
-  margin-left:350px;
-  margin-right:100px;
-  padding-left:40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-left: 40px;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-right: 30px;
-  width:50%;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2); 
+  width: 50%;
 }
-.pop-heading{
-  color:#3498db;
+.pop-heading {
+  color: #3498db;
   font-weight: 800;
 }
-.pop-flex{
+.pop-flex {
   display: flex;
   justify-content: space-between;
 }
-.closeBtn{
+.closeBtn {
   font-size: 30px;
-  color: #00558e;
+  color: #5db3ec;
 }
-.closeBtn:hover, .closeBtn:focus{
+.closeBtn:hover {
   color: black;
+  text-shadow: 2px 2px 2px #9e9c9c;
   cursor: pointer;
+  transition-duration: 0.1s;
 }
-.giturl{
+.giturl {
   font-size: 15px;
-  color:gray;
+  color: gray;
 }
-.url{
-  color:#3498db;
+.url {
+  color: #3498db;
   font-size: 13px;
-
 }
-.Abt{
-  color:#3498db;
+.Abt {
+  color: #3498db;
   font-weight: 600;
   font-size: 23px;
-  margin-top:40px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
-.toprep{
-  color:#3498db;
+.toprep {
+  color: #3498db;
   font-weight: 600;
   font-size: 23px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
-.silt{
+.silt {
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -202,10 +209,10 @@ header {
   padding-left: 20px;
   border: none;
   box-shadow: 1px 1px 5px #c9c9c9;
-  margin-top:30px;
-  width:200px;
+  margin-top: 30px;
+  width: 200px;
 }
-.side{
+.side {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -218,11 +225,19 @@ header {
     flex-direction: column-reverse;
     height: fit-content;
     text-align: center;
+    padding: 0;
+  }
+
+  .right-col,
+  .left-col {
+    width: 95%;
+    padding-bottom: 20px;
   }
   .right-col img {
     margin-top: 20px;
     position: unset;
-    width: 80%;
+    float: unset;
+    width: 40%;
   }
   .org-heading {
     font-size: 30px;
@@ -243,5 +258,34 @@ header {
   }
   .org-name {
     font-size: 20px;
+  }
+
+  /* adding media querries for modal box */
+
+  .pop-content {
+    width: 95%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .giturl {
+    text-align: left;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .pop-heading {
+    font-size: 30px;
+  }
+
+  .org-side-box {
+    /* centering the boxes */
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 80%;
   }
 }
