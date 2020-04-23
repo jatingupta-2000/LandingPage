@@ -78,6 +78,9 @@ li {
   opacity: 0.2;
   font-weight: 900;
 }
+.filter-mobile {
+  display: none;
+}
 
 .follow:hover {
   display: block;
@@ -444,9 +447,6 @@ li {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-  }
-  .filter-mobile-hide {
-    display: none;
   }
 
   .dropdown-label {

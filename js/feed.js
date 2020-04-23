@@ -12,7 +12,8 @@ $(document).ready(function () {
         $(".dropdown-list-organisations").toggleClass("display-none");
     });
     $(".filter-mobile").click(function (e) {
-        $(".filter-mobile-hide").slideToggle();
+        console.log("j");
+        $(".filter-mobile-dropdown").slideToggle();
     });
 
     $(document).click(function (event) {
