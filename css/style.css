@@ -15,6 +15,10 @@
   display: flex;
 }
 
+.icon {
+  display: none;
+}
+
 header {
   background-color: #f7f7f7;
   position: sticky;
@@ -35,11 +39,6 @@ header {
 .logo {
   display: flex;
   align-items: center;
-}
-
-.active-header-link {
-  color: #77b9e6;
-  font-weight: 800;
 }
 
 header a {
@@ -452,22 +451,32 @@ footer h1 {
 /* Adding media querries */
 
 @media screen and (max-width: 990px) {
-  header img {
-    display: none;
-  }
-
-  .left-col-img {
-    display: none;
-  }
   header {
-    font-size: medium;
-    justify-content: center;
-    position: unset;
+    flex-direction: column;
   }
 
-  header h5 {
-    font-size: 30px;
-    margin-left: 0;
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column-reverse;
+  }
+
+  .links a {
+    font-weight: 400;
+    display: block;
+  }
+
+  .header-profile-dropdown {
+    right: unset;
+    left: 0;
   }
 
   .landing-container {
