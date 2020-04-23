@@ -1,3 +1,25 @@
+$(document).ready(function () {
+
+    // header dropdown opening and closing
+
+    $(".profile-picture").click(function (e) {
+        $(".header-profile-dropdown").toggleClass("display-none");
+        $(".header-profile-dropdown").toggleClass("display-flex");
+
+    });
+
+    $(document).click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest('.header-profile-picture').length &&
+            $('.header-profile-dropdown').is(":visible")) {
+            $('.header-profile-dropdown').toggleClass("display-none");
+            $('.header-profile-dropdown').toggleClass("display-flex");
+        }
+    });
+
+});
+
+
 
 function validateEmail(inputText) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -13,3 +35,4 @@ function validateEmail(inputText) {
         return false;
     }
 }
+

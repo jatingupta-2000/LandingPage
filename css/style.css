@@ -7,10 +7,17 @@
 
 /* header */
 
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
 header {
   background-color: #f7f7f7;
   position: sticky;
-
   top: 0;
   display: flex;
   z-index: 1;
@@ -21,11 +28,67 @@ header {
   justify-content: space-between;
 }
 
+.logo a {
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.active-header-link {
+  color: #77b9e6;
+  font-weight: 800;
+}
+
 header a {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
+  height: 40px;
+  line-height: 40px;
   text-decoration: none;
+}
+
+.profile-picture {
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.links {
+  flex-direction: row;
+  display: flex;
+  width: 600px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-profile-dropdown {
+  flex-direction: column;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #f7f7f7;
+  width: auto;
+  margin: 10px;
+  padding: 20px;
+  right: 0;
+}
+
+.header-profile-dropdown a {
+  padding: 0 10px 5px 10px;
+}
+
+.header-profile-dropdown a:hover {
+  border-radius: 10px;
+  background-color: #d3e7f3;
+}
+
+.header-profile-dropdown img {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
 }
 
 header span {
