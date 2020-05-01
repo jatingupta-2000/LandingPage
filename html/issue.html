@@ -298,22 +298,67 @@
           </div>
           <div class="wholebox">
             <div class="display-flex">
-              <input class="input" placeholder="Search" />
-              <div class="dropdown">
-                <span>Filter</span>
-                <div class="dropdown-content">
-                  <p>Recent</p>
-                  <p>Relevent</p>
-                  <p>Important</p>
+              <div class="top-search-bar">
+                <div class="search-bar">
+                  <form class="search-bar-form">
+                    <input
+                      type="search"
+                      class="search-input"
+                      placeholder="Search Projects"
+                    />
+                  </form>
+                  <div class="filter-mobile">
+                    Filter <img src="../SVG/dropdown-arrow.svg" />
+                  </div>
+                </div>
+
+                <div class="filter-mobile-dropdown">
+                  <div class="filter-left-col">
+                    <ul class="dropdown-list-filter">
+                      <li>
+                        <img src="../SVG/yellow.svg" />
+                        <p>JavaScript</p>
+                      </li>
+                      <li>
+                        <img src="../SVG/peach.svg" />
+                        <p>HTML</p>
+                      </li>
+                      <li>
+                        <img src="../SVG/sea-green.svg" />
+                        <p>CSS</p>
+                      </li>
+
+                      <li>
+                        <img src="../SVG/pink.svg" />
+                        <p>Python</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filter-right-col display-non">
+                    <ul class="dropdown-list-filter">
+                      <li>New</li>
+                      <li>Top</li>
+                      <li>Following</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
-              <p class="labelmilestone">
-                Labels
-              </p>
-              <p class="labelmilestone">
-                Milestones
-              </p>
+              <div class="label-milestone">
+                <div class="label">
+                  <img src="../SVG/label-icon.svg" alt="" />
+                  <p class="">
+                    Labels
+                  </p>
+                  <p class="label-number">12</p>
+                </div>
+                <div class="milestone">
+                  <img src="../SVG/milestone-icon.svg" alt="" />
+                  <p class="">
+                    Milestones
+                  </p>
+                  <p class="milestone-number">23</p>
+                </div>
+              </div>
             </div>
             <div class="issuebox">
               <div class="tabs">
@@ -437,13 +482,19 @@
         <div class="dis">
           <p class="dishead">DISCUSSION</p>
           <p class="disbody">No discussions yet...</p>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            class="dis-message"
-          ></textarea>
+          <div class="message">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="3"
+              class="dis-message"
+            ></textarea>
+            <div class="dis-message-actions">
+              <img src="../SVG/send-icon.svg" alt="" srcset="" />
+              <img src="../SVG/add-icon.svg" alt="" srcset="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
